@@ -10,7 +10,7 @@ body {
 
 /* NAVIGATION */
 nav {
-  background: #2f2f2f;
+  background: #3A629F;
   padding: 12px 20px;
   display: flex;
   gap: 20px;
@@ -71,7 +71,7 @@ h1 {
   display: inline-block;
   margin-top: 20px;
   padding: 14px 28px;
-  background: #2f2f2f;
+  background: #3A629F;
   color: white;
   text-decoration: none;
   border-radius: 6px;
