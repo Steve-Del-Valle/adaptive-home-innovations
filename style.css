@@ -1,16 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:wght@300;400;500;700&display=swap');
+
+/* =====================
+   TOKENS
+   ===================== */
+:root {
+  --blue:        #3A629F;
+  --blue-dark:   #2D4A73;
+  --blue-mid:    #5A82BF;
+  --blue-tint:   #EEF3FA;
+  --blue-subtle: #F5F8FD;
+  --text:        #1E2B3A;
+  --text-muted:  #4A5C70;
+  --white:       #ffffff;
+  --border:      #C8D8EE;
+}
+
+/* =====================
+   BASE
+   ===================== */
 body {
   font-family: 'Ubuntu Sans', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  color: #222;
-  background: #fff;
+  color: var(--text);
+  background: var(--white);
   line-height: 1.6;
 }
 
-/* NAVIGATION */
+/* =====================
+   NAVIGATION
+   ===================== */
 nav {
-  background: #3A629F;
+  background: var(--blue);
   padding: 12px 20px;
   display: flex;
   gap: 20px;
@@ -18,7 +39,7 @@ nav {
 }
 
 nav a {
-  color: white;
+  color: var(--white);
   text-decoration: none;
   font-weight: 400;
 }
@@ -32,14 +53,18 @@ nav a.active {
   text-decoration: underline;
 }
 
-/* LAYOUT */
+/* =====================
+   LAYOUT
+   ===================== */
 .container {
   max-width: 900px;
   margin: 0 auto;
   padding: 30px 20px;
 }
 
-/* HEADER */
+/* =====================
+   HEADER / HERO
+   ===================== */
 header {
   text-align: center;
   padding: 40px 20px;
@@ -54,47 +79,152 @@ header {
 
 h1,
 h2 {
-  color: #3A629F;
+  color: var(--blue);
 }
 
 h1 {
   margin: 10px 0;
   font-size: 34px;
 }
+
 .tagline {
   font-size: 18px;
-  color: #3A629F;
+  color: var(--blue);
   font-weight: 500;
 }
+
 .hero-text {
   max-width: 700px;
   margin: 20px auto;
   font-size: 1.2rem;
 }
 
+/* Page headers (non-home pages) */
+.page-header {
+  background: var(--blue-dark);
+  color: var(--white);
+  text-align: center;
+  padding: 50px 20px 40px;
+}
+
+.page-header h1 {
+  color: var(--white);
+  margin: 0 0 12px;
+  font-size: 2.2rem;
+}
+
+.page-header p {
+  font-size: 1.15rem;
+  margin: 0 auto 24px;
+  max-width: 600px;
+  color: #C8D8EE;
+}
+
+/* =====================
+   BUTTONS
+   ===================== */
 .cta-button {
   display: inline-block;
   margin-top: 20px;
   padding: 14px 28px;
-  background: #3A629F;
-  color: white;
+  background: var(--blue);
+  color: var(--white);
   text-decoration: none;
   border-radius: 6px;
   font-weight: 700;
+  transition: background 0.2s;
 }
 
 .cta-button:hover {
-  opacity: 0.9;
+  background: var(--blue-dark);
 }
 
+.page-header .cta-button {
+  background: var(--white);
+  color: var(--blue-dark);
+  margin-top: 0;
+}
+
+.page-header .cta-button:hover {
+  background: var(--blue-tint);
+}
+
+/* =====================
+   SERVICE BOXES
+   ===================== */
+.service-box {
+  background: var(--blue-subtle);
+  border-left: 4px solid var(--blue-mid);
+  padding: 25px 28px;
+  margin: 24px 0;
+  border-radius: 0 6px 6px 0;
+}
+
+.service-box h3 {
+  margin-top: 0;
+  color: var(--blue-dark);
+  font-size: 1.1rem;
+}
+
+/* =====================
+   PROCESS STEPS
+   ===================== */
+.process-steps {
+  margin: 16px 0;
+}
+
+.process-step {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+
+.process-step-num {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  background: var(--blue);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
+
+.process-step-text strong {
+  display: block;
+  color: var(--blue-dark);
+  margin-bottom: 2px;
+}
+
+/* =====================
+   LISTS
+   ===================== */
+ul {
+  padding-left: 20px;
+  color: var(--text);
+}
+
+ul li {
+  margin-bottom: 6px;
+}
+
+/* =====================
+   FOOTER
+   ===================== */
 footer {
   margin-top: 50px;
   padding: 25px 20px;
   text-align: center;
-  background: #3A629F;
-  color: white;
+  background: var(--blue-dark);
+  color: var(--white);
 }
 
 footer p {
   margin: 5px 0;
+  color: #C8D8EE;
 }
