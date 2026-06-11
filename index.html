@@ -5,6 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adaptive Home Innovations | Making Homes Work for Life</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* PROJECT GALLERY */
+    .project-section {
+      background: var(--blue-tint);
+      padding: 40px 20px;
+    }
+
+    .project-section .inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .project-section h2 {
+      margin-top: 0;
+    }
+
+    .project-meta {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin: 0 0 20px;
+    }
+
+    .project-description {
+      margin-bottom: 28px;
+      font-size: 1.05rem;
+    }
+
+    .photo-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .photo-grid .photo-main {
+      grid-column: 1 / -1;
+    }
+
+    .photo-grid img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 6px;
+      display: block;
+    }
+
+    .photo-grid .photo-main img {
+      height: 420px;
+    }
+
+    .photo-caption {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-top: 5px;
+    }
+  </style>
 </head>
 
 <body>
@@ -18,76 +73,91 @@
 
 <header>
   <img src="logo.svg" alt="Adaptive Home Innovations Logo" class="logo">
-
   <h1>Making Homes Work for Life</h1>
-
   <p class="tagline">
-    Repairs • Improvements • Custom Projects • Accessibility & Safety Solutions
+    Repairs • Improvements • Custom Projects • Accessibility &amp; Safety Solutions
   </p>
-
   <p class="hero-text">
-    From everyday repairs and home improvements to accessibility modifications and aging-in-place solutions, Adaptive Home Innovations helps homeowners create safer, more functional, and more comfortable living environments.
+    From everyday repairs and home improvements to accessibility modifications
+    and aging-in-place solutions, Adaptive Home Innovations helps homeowners
+    create safer, more functional, and more comfortable living environments.
   </p>
-
-  <a href="contact.html" class="cta-button">
-    Schedule a Free Consultation
-  </a>
+  <a href="contact.html" class="cta-button">Schedule a Free Consultation</a>
 </header>
 
 <section class="container">
-
   <h2>A Home That Works for You</h2>
-
+  <p>Life changes. Your home should be able to change with you.</p>
   <p>
-    Life changes. Your home should be able to change with you.
+    Whether you're maintaining your home, planning for the future, supporting
+    a family member, recovering from an injury, or simply looking for a safer
+    and more functional living environment, Adaptive Home Innovations can help.
   </p>
-
-  <p>
-    Whether you're maintaining your home, planning for the future, supporting a family member, recovering from an injury, or simply looking for a safer and more functional living environment, Adaptive Home Innovations can help.
-  </p>
-
-  <p>
-    Our goal is simple: to make homes work better for the people who live in them.
-  </p>
-
+  <p>Our goal is simple: to make homes work better for the people who live in them.</p>
 </section>
 
 <section class="container">
-
   <h2>Services</h2>
-
   <p>
-    Adaptive Home Innovations offers practical solutions that help homeowners maintain, improve, and adapt their homes for changing needs and everyday living.
+    Adaptive Home Innovations offers practical solutions that help homeowners
+    maintain, improve, and adapt their homes for changing needs and everyday living.
   </p>
-
   <ul>
     <li>
-      <strong>Repairs & Maintenance</strong> — Keeping your home safe, functional, and well maintained.
+      <strong>Repairs &amp; Maintenance</strong> — Keeping your home safe,
+      functional, and well maintained.
     </li>
-
     <li>
-      <strong>Improvements & Custom Projects</strong> — Fences, gates, storage solutions, carpentry, upgrades, and other projects that improve how your home looks, feels, and functions.
+      <strong>Improvements &amp; Custom Projects</strong> — Fences, gates,
+      storage solutions, carpentry, upgrades, and other projects that improve
+      how your home looks, feels, and functions.
     </li>
-
     <li>
-      <strong>Accessibility & Safety Solutions</strong> — Modifications that support independence, confidence, and peace of mind.
+      <strong>Accessibility &amp; Safety Solutions</strong> — Modifications
+      that support independence, confidence, and peace of mind.
     </li>
-
     <li>
-      <strong>Work-for-Life Home Assessments</strong> — Planning for a home that can adapt to changing needs over time.
+      <strong>Work-for-Life Home Assessments</strong> — Planning for a home
+      that can adapt to changing needs over time.
     </li>
   </ul>
+  <p><a href="services.html">View All Services →</a></p>
+</section>
 
-  <p>
-    <a href="services.html">View All Services →</a>
-  </p>
+<section class="project-section">
+  <div class="inner">
+    <h2>Featured Project</h2>
+    <p class="project-meta">Cedar Privacy Fence &amp; Custom Gate — Ashland, OR</p>
+    <p class="project-description">
+      A full perimeter cedar fence with horizontal slat design and a custom
+      decorative iron gate, creating a private, welcoming backyard entry.
+      The design works with the natural character of the property — the
+      boulders, mature trees, and existing stonework — rather than against it.
+    </p>
 
+    <div class="photo-grid">
+      <div class="photo-main">
+        <img src="fence-finished.jpg" alt="Completed cedar fence and decorative gate with finished backyard">
+        <p class="photo-caption">Completed — cedar fence with custom iron gate and paver entry</p>
+      </div>
+      <div>
+        <img src="fence-before.jpg" alt="Posts set, early construction">
+        <p class="photo-caption">Posts set and braced — start of construction</p>
+      </div>
+      <div>
+        <img src="fence-during.jpg" alt="Fence panels going up">
+        <p class="photo-caption">Panels going up — horizontal slat design taking shape</p>
+      </div>
+      <div>
+        <img src="fence-gate.jpg" alt="Custom decorative iron gate detail">
+        <p class="photo-caption">Custom iron gate — detail of finished entry</p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="container">
-
   <h2>Who We Help</h2>
-
   <ul>
     <li>Homeowners planning for the future</li>
     <li>Older adults wishing to age in place</li>
@@ -95,38 +165,14 @@
     <li>Individuals recovering from injury or illness</li>
     <li>Anyone seeking greater comfort, safety, and accessibility at home</li>
   </ul>
-
 </section>
 
 <section class="container">
-
-  <h2>Featured Projects</h2>
-
-  <p>
-    <strong>Custom Fence Installation</strong><br>
-    Designed and built a fence that enhanced privacy, security, and curb appeal while complementing the character of the property.
-  </p>
-
-  <p>
-    <strong>Bathroom Safety Upgrade</strong><br>
-    Installed grab bars and accessibility improvements to improve safety and confidence.
-  </p>
-
-  <p>
-    <strong>Accessibility Modification</strong><br>
-    Adapted living spaces to improve ease of use and independence.
-  </p>
-
-</section>
-
-<section class="container">
-
   <h2>Serving the Rogue Valley</h2>
-
   <p>
-    Adaptive Home Innovations proudly serves homeowners throughout Ashland, Talent, Phoenix, Medford, and surrounding communities.
+    Adaptive Home Innovations proudly serves homeowners throughout Ashland,
+    Talent, Phoenix, Medford, and surrounding communities.
   </p>
-
 </section>
 
 <footer>
