@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="3.5in"
-   height="2.0in"
-   viewBox="0 0 3.5 2.0"
+   width="2.9197962in"
+   height="1.4222981in"
+   viewBox="0 0 2.9197962 1.4222981"
    id="SVGRoot"
    version="1.1"
    inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
@@ -16,8 +16,8 @@
   <sodipodi:namedview
      inkscape:document-units="in"
      inkscape:zoom="1.9340212"
-     inkscape:cx="142.70785"
-     inkscape:cy="67.734521"
+     inkscape:cx="115.04527"
+     inkscape:cy="50.154569"
      id="namedview1"
      pagecolor="#ffffff"
      bordercolor="#000000"
@@ -39,7 +39,8 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     style="display:inline">
+     style="display:inline"
+     transform="translate(-0.28525851,-0.18412254)">
     <g
        id="g1">
       <path
@@ -68,5 +69,6 @@
   <g
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="Layer 2" />
+     inkscape:label="Layer 2"
+     transform="translate(-0.28525851,-0.18412254)" />
 </svg>
