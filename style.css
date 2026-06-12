@@ -74,7 +74,7 @@ header {
   max-width: 300px;
   width: 100%;
   height: auto;
-  margin-bottom: -20px;
+  margin-bottom: -40px;
 }
 
 h1,
@@ -83,19 +83,19 @@ h2 {
 }
 
 h1 {
-  margin: 10px 0;
+  margin: 0 0 6px;
   font-size: 34px;
 }
 
 .business-meta {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: var(--text-muted);
   margin: 4px 0;
   font-weight: 400;
 }
 
 .credentials {
-  font-size: 0.95rem;
+  font-size: 1.2rem;
   color: var(--blue-mid);
   font-weight: 500;
   margin: 4px 0 16px;
